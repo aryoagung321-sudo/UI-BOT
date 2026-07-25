@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CikiOTP V2.0 Bot UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to match the Telegram look as closely as possible */
+        body {
+            background-color: #f0f2f5; /* Light grey background similar to Telegram web */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .message-container {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            overflow: hidden; /* Ensure image and table don't spill out */
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .content-padding {
+            padding: 16px;
+        }
+
+        .title-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .title-text {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #1c93e3; /* Blue color matching the image text */
+            margin: 0 8px;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem; /* Slightly smaller text for table content */
+            color: #1a1a1a;
+            border: 1px solid #e0e0e0;
+        }
+
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px 10px;
+            text-align: left;
+            vertical-align: top; /* Align content to top of cells */
+        }
+
+        th {
+            background-color: #f8f9fa; /* Very light grey for header row */
+            font-weight: 600;
+        }
+
+        /* Adjust icon spacing within table cells */
+        .cell-content {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .instructions-section {
+            margin-top: 20px;
+        }
+        
+        .instructions-title {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            gap: 8px;
+        }
+        
+        .instructions-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .instructions-list li {
+            margin-bottom: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="message-container">
+        <!-- 
+            Using a placeholder image that resembles the dimensions of the provided banner.
+            In a real scenario, you'd replace this URL with the actual hosted image.
+        -->
+        <img src="images/image1.jpg" alt="CikIOTP V2.0 Banner" class="header-image">
+
+        <div class="content-padding">
+            <div class="title-row">
+                <span>📊</span>
+                <span class="title-text">CikIOTP V2.0</span>
+                <span>📊</span>
+            </div>
+
+            <p class="subtitle">✨ Berikut adalah rincian informasi layanan Bot Nomor Virtual kami ✨</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="cell-content">
+                                📌 Item / Kategori
+                            </div>
+                        </th>
+                        <th>
+                            <div class="cell-content">
+                                📝 Keterangan Detail
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1: Layanan -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                🛠️ Layanan
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                📱 Virtual Number OTP
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Row 2: Tagline -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                🏷️ Tagline
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                🚀 Digital Mudah Tanpa Perlu Ribet
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: BOT NOKOS -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                🤖 BOT NOKOS
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                @lacakv1ch_bot
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Mode -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                ⚡ Mode
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                ✨ Fast Receive
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 5: Koneksi Server -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                🔌 Koneksi Server
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                🟢 Online
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Row 6: Status Layanan -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                📈 Status Layanan
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                ✅ 1.064 aktif
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 7: Jangkauan Negara -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                🌍 Jangkauan Negara
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                🗺️ 192+ tersedia
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 8: Pesan User Umum -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                👤 Pesan User Umum
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                👇 Tekan Pesan Nomor Sekarang untuk<br>mulai order OTP. 📲
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 9: Akses Admin -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                👑 Akses Admin
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                🛡️ Anda login sebagai admin. Tekan 🔧<br>Panel Admin.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 10: Developer -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                💻 Developer
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                👤 @Leehaym
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 11: Channel 1 -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                📣 Channel 1
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                🔗 t.me/terorpinjol
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 12: Channel 2 -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                📣 Channel 2
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                🔗 t.me/sposintidid
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 13: Store -->
+                    <tr>
+                        <td>
+                            <div class="cell-content">
+                                🛒 Store
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cell-content">
+                                🤖 t.me/storecrash_bot
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="instructions-section">
+                <div class="instructions-title">
+                    💡 Petunjuk Tambahan 💡
+                </div>
+                <ul class="instructions-list">
+                    <li>📶 <strong>Penggunaan Layanan:</strong> Pastikan Anda terhubung dengan koneksi internet yang stabil saat melakukan pemesanan nomor OTP. 🚀</li>
+                    <li>🛡️ <strong>Panduan Admin:</strong> Tombol Panel Admin hanya muncul apabila akun Telegram Anda terverifikasi sebagai pengelola/administrator. 🔑</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
